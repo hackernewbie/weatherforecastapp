@@ -9,7 +9,7 @@ Future<WeatherInfo> fetchWeather () async {
   final zipCode = "788009";
   final countryCode = "IN";
   final units       = "metric";
-  final apiKey = "e32f9ff9f3a754ccdec0d9eb68f2a484";
+  final apiKey = "";
   final requestURL = "http://api.openweathermap.org/data/2.5/weather?zip=${zipCode},${countryCode}&units=${units}&appid=${apiKey}";
 
   final response = await http.get(Uri.parse(requestURL));
